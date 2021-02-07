@@ -74,6 +74,20 @@ img {
     color: var(--primario-color) !important;
 }
 
+.primario15 {
+    background-color: var(--primario15-color);
+    padding: 1.5rem 0;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    transition: all .5s ease;
+}
+
+.primario15:hover {
+    background-color: var(--primario-color);
+    color: var(--light-color);
+}
+
 /* ============== Header ============== */
 /* Header */
 .site-header {
@@ -207,7 +221,7 @@ img {
 
 @media (min-width: 890px) {
     .site-main {
-        height: 55rem;
+        height: 60rem;
     }
 
     .info-main {
@@ -262,4 +276,96 @@ img {
         border-radius: 1rem;
         box-shadow: 0rem .5rem .5rem rgba(0, 0, 0, 0.068);
     }
+}
+
+/* ============== Miembros del equipo ============== */
+.equipo h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--light-weight);
+    text-align: center;
+}
+
+.equipo h2 span {
+    font-weight: var(--bold-weight);
+    color: var(--primario-color);
+}
+
+.contenedor-miembros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.miembro {
+    flex-basis: calc(100% / 3 - 5rem);
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0rem .2rem 1rem rgba(0, 0, 0, 0.096);
+    background-color: var(--light-color);
+    padding: 1.5rem 0 ;
+    margin-bottom: 2rem;
+}
+
+.tarjet-header {
+    border-bottom: .2rem solid var(--muted-color);
+    padding: 2rem 0;
+}
+
+.miembro:nth-child(1) .tarjet-header .profile {
+    background-image: url(../IMG/profile_1.jpg);
+    background-size: 170%;
+    background-position:  center 15%;
+}
+
+.miembro:nth-child(2) .tarjet-header .profile {
+    background-image: url(../IMG/pexels-amanda-souza-6677447.jpg);
+    background-size: 100%;
+    background-position:  center 15%;
+}
+
+.miembro:nth-child(3) .tarjet-header .profile {
+    background-image: url(../IMG/profile_2.jpg);
+    background-size: 130%;
+    background-position:  center 17%;
+}
+
+.tarjet-header .profile {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.tarjet-header h3 {
+    font-size: var(--p-font-size);
+    font-weight: var(--bold-weight);
+    margin: 1rem 0 .5rem 0;
+}
+
+.tarjet-header p {
+    font-size: var(--small-font-size);
+    font-weight: var(--light-weight);
+}
+
+.tarjet-info {
+    padding: 2rem 0;
+}
+
+.tarjet-info p {
+    font-size: var(--small-font-size);
+    font-weight: var(--bold-weight);
+}
+
+.tarjet-info .redes {
+    margin-bottom: 2rem;
+}
+
+.tarjet-info .redes a {
+    color: var(--dark-color);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    transition: all .5s ease;
+}
+
+.tarjet-info .redes a:hover {
+    color: var(--primario-color);
 }
