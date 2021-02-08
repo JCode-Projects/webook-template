@@ -1009,17 +1009,22 @@ footer {
     padding: 2rem 0;
 }
 
+.info-cop .redes {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
 @media (min-width: 640px) {
     .info-cop {
         text-align: left;
         display: flex;
         justify-content: space-between;
     }
-}
-
-.info-cop .redes {
-    margin-top: 1rem;
-    margin-bottom: 0;
+    
+    .info-cop .redes {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
 }
 
 .info-cop h3 {
