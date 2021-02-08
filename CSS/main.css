@@ -390,18 +390,18 @@ img {
     font-weight: var(--bold-weight);
 }
 
-.tarjet-info .redes {
+.redes {
     margin-bottom: 2rem;
 }
 
-.tarjet-info .redes a {
+.redes a {
     color: var(--dark-color);
     margin-right: 1rem;
     font-size: 1.8rem;
     transition: all .5s ease;
 }
 
-.tarjet-info .redes a:hover {
+.redes a:hover {
     color: var(--primario-color);
 }
 
@@ -830,3 +830,199 @@ img {
 }
 
 /* ============== Newsletter ============== */
+.newsletter {
+    padding: 8rem 0;
+}
+
+.cont-newsletter {
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.253);
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-newsletter {
+    padding: 4rem 2rem;
+    text-align: center;
+    order: 1;
+}
+
+@media (min-width: 768px) {
+    .info-newsletter {
+        flex-basis: 60%;
+    }
+}
+
+.info-newsletter h2 {
+    margin: 0;
+    font-size: var(--h2-font-size);
+    font-weight: var(--light-weight);
+}
+
+.info-newsletter h2 span {
+    font-weight: var(--bold-weight);
+    color: var(--primario-color);
+}
+
+.info-newsletter p {
+    margin: 1rem 0 3rem 0;
+    font-size: var(--p-font-size);
+    font-weight: var(--light-weight);
+}
+
+.img-newsletter {
+    background-image: url(../IMG/pexels-caio-67112.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    flex-basis: 100%;
+    height: 20rem;
+}
+
+@media (min-width: 768px) {
+    .img-newsletter {
+        flex-basis: 30%;
+        height: 27rem;
+        order: 1;
+        border-radius: 0 1rem 1rem 0;
+    }
+}
+
+/* ============== Redes ============== */
+.redes-cont {
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: space-between;
+    border-top: .1rem solid #747d9752;
+    border-bottom: .1rem solid #747d9752;
+    flex-wrap: wrap;
+}
+
+.red {
+    flex-basis: 100%;
+    border-right: none;
+    border-bottom: .1rem solid #747d9752;
+    text-align: center;
+}
+
+.red:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 550px) {
+    .red {
+
+        flex-basis: calc(100% / 4);
+        border-right: .1rem solid #747d9752;
+        transition: all .5s ease;
+        border-bottom: none;
+    }
+}
+
+.red:last-child {
+    border-right: none;
+}
+
+.red em {
+    transition: all .5s ease;
+    font-size: 2rem;
+}
+
+.red p {
+    transition: all .5s ease;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.red:hover {
+    background-color: var(--primario15-color);
+    cursor: pointer;
+}
+
+.red:hover em,
+.red:hover p {
+    color: var(--primario-color);
+}
+
+/* ============== Footer ============== */
+footer {
+    background-color: var(--light-color);
+}
+
+.info-footer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .info-footer {
+        text-align: left;
+    }
+}
+
+.info-footer h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--light-weight);
+    margin: 0;
+}
+
+.info-footer h2 span {
+    font-weight: var(--bold-weight);
+    color: var(--primario-color);
+}
+
+.info-footer p {
+    font-weight: var(--light-weight);
+    font-size: var(--p-font-size);
+    margin: 1rem 0 0 0;
+}
+
+@media (min-width: 640px) {
+    .contenerdor-contacto {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.opcion-cont h3 {
+    font-weight: var(--bold-weight);
+    font-size: var(--p-font-size);
+    margin: 2rem 0 0 0;
+}
+
+.opcion-cont p {
+    font-size: var(--small-font-size);
+    margin: .5rem 0 0 0;
+}
+
+/* ============== CopyRight ============== */
+.copyright {
+    border-top: .1rem solid #747d9752;
+}
+
+.info-cop {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .info-cop {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0 0 0;
+    }
+}
+
+.info-cop h3 {
+    margin: 0;
+    font-size: var(--p-font-size);
+    font-weight: var(--bold-weight);
+}
+
+.info-cop h3 span {
+    font-weight: var(--light-weight);
+}
