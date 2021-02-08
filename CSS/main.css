@@ -1006,6 +1006,7 @@ footer {
 
 .info-cop {
     text-align: center;
+    padding: 2rem 0;
 }
 
 @media (min-width: 640px) {
@@ -1013,8 +1014,11 @@ footer {
         text-align: left;
         display: flex;
         justify-content: space-between;
-        padding: 2rem 0 0 0;
     }
+}
+
+.info-cop .redes {
+    margin-bottom: 0;
 }
 
 .info-cop h3 {
